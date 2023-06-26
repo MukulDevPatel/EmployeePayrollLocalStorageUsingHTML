@@ -18,12 +18,16 @@
         </div>
     </div>
    </header>
-   <div class="form-content">
-    <form class="form" action="#" onsubmit="save();return false">
+
+   <div id="formId" class="form-content">
+    <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
+        
+        <!-- UC2 -->
         <div class="form-head">Employee Payroll Form</div>
         <div class="row-content">
             <label class="label text" for="name">Name</label>
             <input class="input" type="text" id="name" name="name" placeholder="Your name" required>
+            <error-output class="text-error" for="text"></error-output>
         </div>
         <div class="row-content">
             <label class="label text">Profile Image</label>
@@ -82,7 +86,7 @@
             <label class="label text" for="salary">Choose your salary</label>
             <input class="input" type="range" name="salary" id="salary" min="30000" 
             max="100000" step="100" value="40000">
-            <output class="salary-output-text" for="salary">40000</output>
+            <output class="salary-output text" for="salary">40000</output>
         </div>
         <div class="row-content">
             <label class="label text" for="startDate">Start Date</label>
@@ -158,14 +162,8 @@
             </div>
         </div>
     </form>
-    <script>
-        var salary = document.querySelector("#salary");
-        var output = document.querySelector(".salary-output-text");
-        output.textContent = salary.value;
-        salary.addEventListener('input',function(){
-          output.textContent = salary.value;
-        });
-    </script>
+    <script defer src="../js/payroll.js"></script>
+    <script defer src="../js/newPayroll.js"></script>
     </div>
 </body>
 </html>

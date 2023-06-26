@@ -84,7 +84,7 @@ label{
     border-radius: 4px;
     resize: vertical;
 }
-/* UC3 */
+
 .profile-radio-content{
     display: flex;
     flex-direction: row;
@@ -100,7 +100,6 @@ label{
     margin-left: 12px;
 }
 
-/* UC5 */
 select{
     padding: 12px;
     border: 1px solid #ccc;
@@ -111,7 +110,7 @@ select{
     color: #42515f;
     background-color: transparent;
 }
-/* UC6 */
+
 .buttonParent{
     display: flex;
     margin-bottom: 10px;
@@ -187,7 +186,6 @@ error-output{
         align-items: flex-start;
     }
 }
-/* UC7 */
 
 .submitButton:hover{
     background-color: rgb(81, 145, 81);
@@ -200,4 +198,11 @@ error-output{
 .resetButton:hover{
     background-color: rgb(226, 226, 10);
     color: black;
+}
+/* UC2 */
+error-output{
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
 }
